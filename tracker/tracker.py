@@ -177,7 +177,7 @@ class Tracker3D:
                 min = np.min(cost_map[i])
                 arg_min = np.argmin(cost_map[i])
 
-                if min<2.:
+                if min<2.0:
                     ids.append(all_ids[arg_min])
                     cost_map[:,arg_min] = 100000
                 else:
